@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degradado"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/marca"
+        android:fontFamily="@font/fredokavariablefontwdthwght"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/elevatedButton"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/llamar_a_emergencias"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/myTextView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marca"
+        >
+
+        <TableRow
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/datos_del_hogar"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:text="@string/nombre"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                />
+            <TextView
+
+                android:text="@string/juan"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_weight="8"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:text="@string/apellido"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:text="@string/perez"
+                android:textAlignment="center"
+                android:layout_weight="8"
+                android:textSize="16sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:text="@string/direccion"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:text="@string/calle_siempre_viva_s_n"
+                android:textAlignment="center"
+                android:layout_weight="8"
+                android:textSize="16sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:text="@string/correo"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:text="@string/juanpe_gmail_com"
+                android:textAlignment="center"
+                android:layout_weight="8"
+                android:textSize="16sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:text="@string/telefono"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                />
+            <Button
+                android:id="@+id/elevatedButton10"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="14sp"
+                android:text="@string/_9_2999_3489"
+                android:textColor="@color/black" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myTextView"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lectura_actual"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/img_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myTextView"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/elevatedButton1"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/informacion_de_integrantes_del_grupo"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/elevatedButton2"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ver_registro_de_alertas"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/elevatedButton1"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

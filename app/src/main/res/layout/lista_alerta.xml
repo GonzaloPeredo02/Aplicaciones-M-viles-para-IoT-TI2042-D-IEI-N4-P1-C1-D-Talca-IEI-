@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degradado"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/marca"
+        android:fontFamily="@font/fredokavariablefontwdthwght"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredokavariablefontwdthwght"
+        android:text="Historial de Alertas"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/marca"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/elevatedButtonx"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/myTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        >
+
+        <TableRow
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/hora"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gas"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/rango"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_29_03_24"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_22_39"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/co"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_60"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_28_03_24"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/_10_20"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/co"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_65"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_22_03_24"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_09_10"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/co"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_70"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_21_03_24"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_23_32"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/co"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_50"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                />
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
